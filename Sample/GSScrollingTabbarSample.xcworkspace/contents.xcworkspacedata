@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../GSScrollingTabbar.xcodeproj">
+      location = "group:../GSScrollingTabbar.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:GSScrollingTabbarSample.xcodeproj">
