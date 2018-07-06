@@ -59,7 +59,7 @@ class Tabbar: UIViewController, StoryboardLoading {
     private var state: ScrollingTabbar.State = .init() {
         didSet {
             menuBar.state = state
-            collectionView.selectItem(at: state.selectedIndex, animated: true, scrollPosition: .centeredHorizontally)
+            collectionView.scrollToItem(at: state.selectedIndex, at: .centeredHorizontally, animated: true)
         }
     }
     

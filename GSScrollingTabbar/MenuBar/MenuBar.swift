@@ -28,7 +28,7 @@ class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UIC
     override func awakeFromNib() {
         super.awakeFromNib()
         let selectedIndexPath = IndexPath(item: 0, section: 0)
-        collectionView.selectItem(at: selectedIndexPath, animated: false, scrollPosition: [])
+        collectionView.scrollToItem(at: selectedIndexPath, at: .centeredHorizontally, animated: true)
         collectionView.collectionViewLayout = layout
     }
     
@@ -61,7 +61,7 @@ class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UIC
     
     func selectItem(at index: Int) {
         let indexPath = IndexPath(item: index, section: 0)
-        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: [])
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

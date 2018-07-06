@@ -33,7 +33,6 @@ class SampleTableViewController: UITableViewController, StoryboardLoading {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         cell.textLabel?.text = "\(indexPath.row)"
         cell.contentView.backgroundColor = cellColor
-        cell.selectionStyle = .none
         return cell
     }
 }
