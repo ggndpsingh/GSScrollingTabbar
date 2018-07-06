@@ -17,8 +17,8 @@ class MainSectionCell: UICollectionViewCell {
         guard self.viewController == nil || self.viewController != viewController else { return }
         self.viewController = viewController
         
-        container.addChild(viewController)
-        viewController.didMove(toParent: container)
+        container.addChildViewController(viewController)
+        viewController.didMove(toParentViewController: container)
         addSubview(viewController.view)
         viewController.view.translatesAutoresizingMaskIntoConstraints =  false
         viewController.view.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
